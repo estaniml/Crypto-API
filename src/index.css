@@ -1,0 +1,66 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+.hide {
+  display: none;
+}
+
+.drop {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  gap: 5px;
+  background-color: #0b0b0be0;
+  padding: 20px;
+  font-size: 24px;
+  height: 100vh;
+  width: 300px;
+  animation-duration: 0.3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    right: -300px;
+  }
+
+  to {
+    right: 0px;
+  }
+}
+
+.menu-icon {
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 5px;
+}
+
